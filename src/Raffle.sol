@@ -45,7 +45,8 @@ contract Raffle is VRFConsumerBaseV2 {
     /* EVENTS */
     event EnteredRaffle(address indexed player);
     event PickedWinner(address indexed winner);
-    event RequestedRaffleWinner(uint256 indexed requestId);
+
+    event RequestedRaffleWinner(uint256 indexed requestId); // for testing
 
     constructor(
         uint256 entranceFee,
